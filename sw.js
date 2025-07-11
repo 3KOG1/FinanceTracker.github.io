@@ -5,11 +5,11 @@ const urlsToCache = [
     '/src/output.css',
     '/utils/helpers.js',
     '/utils/backup.js',
-    '/dist/Sidebar.js',
-    '/dist/UI.js',
-    '/dist/Forms.js',
-    '/dist/Views.js',
-    '/dist/App.js'
+    '/components/Sidebar.jsx',
+    '/components/UI.jsx',
+    '/components/Forms.jsx',
+    '/components/Views.jsx',
+    '/App.jsx'
 ];
 
 self.addEventListener('install', event => {
