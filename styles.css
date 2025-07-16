@@ -1,0 +1,84 @@
+/* --- General Styles --- */
+.root {
+    -fx-background-color: #2D3436; /* Dark grey background */
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.header-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #DFE6E9; /* Light grey text */
+    -fx-padding: 0 0 10px 0;
+}
+
+/* --- Task List View --- */
+.task-list-view {
+    -fx-background-color: #636E72; /* Medium grey background */
+    -fx-border-color: #B2BEC3;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.task-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF; /* White text for items */
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+}
+
+.task-list-view .list-cell:filled:hover {
+    -fx-background-color: #0984E3; /* Blue on hover */
+    -fx-text-fill: white;
+}
+
+.task-list-view .list-cell:filled:selected {
+    -fx-background-color: #74B9FF; /* Lighter blue when selected */
+    -fx-text-fill: #2D3436;
+}
+
+/* Style for the text of a completed task */
+.completed-task {
+    -fx-strikethrough: true;
+    -fx-text-fill: #B2BEC3; /* Dim the text when completed */
+}
+
+
+/* --- Input Controls --- */
+.new-task-field {
+    -fx-background-color: #636E72;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #B2BEC3;
+    -fx-border-color: #B2BEC3;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.add-button {
+    -fx-background-color: #00B894; /* Green button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.add-button:hover {
+    -fx-background-color: #55E6C1; /* Lighter green on hover */
+}
+
+/* --- CheckBox Customization --- */
+.check-box .box {
+    -fx-background-color: #636E72;
+    -fx-border-color: #B2BEC3;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #00B894; /* Green checkmark */
+}
+
+.check-box:selected .box {
+    -fx-background-color: #2D3436;
+}
+
